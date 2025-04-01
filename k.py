@@ -2,10 +2,11 @@ import os
 import time
 import random
 import git
+import shutil
 from datetime import datetime, timedelta
 
 # Configuration
-SOURCE_REPO = "https://github.com/codingforentrepreneurs/SaaS-Foundations.git"
+SOURCE_REPO = "https://github.com/bradtraversy/50projects50days.git"
 DESTINATION_REPO = "https://github.com/SAMEER-40/test-repo-for-saas.git"
 LOCAL_DIR = "D:\\test\\automategithub"
 
@@ -17,7 +18,7 @@ def clone_repo(source_url, local_dir):
             shutil.rmtree(local_dir)  # Remove invalid directory
 
         print(f"📥 Cloning repo from {source_url} to {local_dir} ...")
-        repo = git.Repo.clone_from(source_url, local_dir)
+        repo = git.Repo.clone_from(source_url, local_dir, branch='master')
     else:
         print("🔄 Repo already exists. Fetching latest updates...")
         repo = git.Repo(local_dir)
@@ -28,7 +29,8 @@ def clone_repo(source_url, local_dir):
 
 def replay_commits(source_repo, dest_repo_path):
     """Recreates commits from source repo in destination repo."""
-    commits = list(source_repo.iter_commits('main'))[::-1]  # Get commits in order
+    default_branch = source_repo.active_branch.name  # Get the actual branch name
+    commits = list(source_repo.iter_commits(default_branch))[::-1]
     dest_repo = git.Repo.init(dest_repo_path)
     
     # Configure remote repo
@@ -44,7 +46,11 @@ def replay_commits(source_repo, dest_repo_path):
         new_time_str = new_time.strftime('%Y-%m-%dT%H:%M:%S')
 
         # Checkout and apply changes
-        dest_repo.git.checkout('-b', 'main', force=True)
+# Check if 'main' branch exists
+    if 'main' in dest_repo.heads:
+        dest_repo.git.checkout('main')  # Switch to the existing main branch
+    else:
+        dest_repo.git.checkout('-b', 'main')  # Create and switch if it doesn't exist
         dest_repo.git.reset('--hard')  # Clear previous commits
         for file in commit.tree.traverse():
             if file.type == 'blob':  # Only process files, not directories
@@ -52,12 +58,13 @@ def replay_commits(source_repo, dest_repo_path):
                 with open(file_path, "wb") as f:
                     f.write(file.data_stream.read())  # Save file
 
-        dest_repo.git.add(all=True)
-        dest_repo.index.commit(commit.message, author=commit.author, author_date=new_time_str, committer_date=new_time_str)
-        print(f"Committed: {commit.message.strip()} at {new_time}")
+    dest_repo.git.add(A=True)
+    dest_repo.index.commit(commit.message, author=commit.author, author_date=new_time_str, commit_date=new_time_str)
+    print(f"Committed: {commit.message.strip()} at {new_time}")
 
     # Push all commits to new repo
-    origin.push('--force')
+    dest_repo.git.push('origin', 'main', '--force')
+
     print("All commits pushed successfully.")
 
 def automate_push():
@@ -67,6 +74,6 @@ def automate_push():
 if __name__ == "__main__":
     while True:
         automate_push()
-        sleep_time = random.randint(3600, 86400)  # Random interval between 1 hour and 1 day
-        print(f"Next push in {sleep_time // 3600} hours.")
+        sleep_time = random.randint(60, 80)  # Random interval between 1 hour and 1 day
+        print(f"Next push in {sleep_time} seconds...")
         time.sleep(sleep_time)
