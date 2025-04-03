@@ -101,7 +101,7 @@ def generate_json(repo_path):
 
     for commit in commits:
         commit_hash = commit["hash"]
-        commit_time = datetime.fromisoformat(commit["date"]).isoformat()
+        commit_time = datetime.fromisoformat(commit["date"]).strftime("%Y-%m-%dT%H:%M:%S")
         files = get_commit_files(repo_path, commit_hash)
 
         for file in files:
