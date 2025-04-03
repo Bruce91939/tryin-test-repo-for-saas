@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "file": "jsonauto/src/file1.py",
+    "code": "print('Hello from file1!')",
+    "time": "2025-04-01T05:30:00",
+    "commit_message": "Added file1.py print statement",
+    "branch": "main",
+    "repeat": "none"
+  },
+  {
+    "id": 2,
+    "file": "jsonauto/src/file2.py",
+    "code": "x = 5\nprint(x)",
+    "time": "2025-04-01T05:30:10",
+    "commit_message": "Initialized variable x in file2.py",
+    "branch": "main",
+    "repeat": "none"
+  }
+]
