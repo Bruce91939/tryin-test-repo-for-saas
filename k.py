@@ -74,6 +74,6 @@ def automate_push():
 if __name__ == "__main__":
     while True:
         automate_push()
-        sleep_time = random.randint(0)  # Random interval between 1 hour and 1 day
+        sleep_time = random.randint(0.1, 0.2)  # Random interval between 1 hour and 1 day
         print(f"Next push in {sleep_time} seconds...")
         time.sleep(sleep_time)
