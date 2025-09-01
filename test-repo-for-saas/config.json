@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "file": "jsonauto/src/file1.py",
+    "code": "print('Hello from file1!')",
+    "time": "2025-01-01T05:30:00",
+    "commit_message": "Added file1.py print statement",
+    "branch": "main",
+    "repeat": "none"
+  },
+  {
+    "id": 2,
+    "file": "jsonauto/src/file2.py",
+    "code": "x = 5\nprint(x)",
+    "time": "2025-01-01T05:30:30",
+    "commit_message": "Initialized variable x in file2.py",
+    "branch": "main",
+    "repeat": "none"
+  },
+    {
+      "id": 3,
+      "file": "jsonauto/src/COPY-PASTE-LIST.md",
+      "code": "diff --git a/COPY-PASTE-LIST.md b/COPY-PASTE-LIST.md\nindex 40cde36..7765e16 100644\n--- a/COPY-PASTE-LIST.md\n+++ b/COPY-PASTE-LIST.md\n@@ -19,7 +19,7 @@ Built with the Next.js 13.5 App Router, tRPC, TypeScript, Prisma & Tailwind\n `polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)`\n \n ### Background Image - src/app/globals.css\n-` background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAElBMVEUAAAD8/vz08vT09vT8+vzs7uxH16TeAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAuFJREFUOI0Vk+3NLiEIRG1B8ClAYAsQ2AIEt4D9ePtv5Xp/mZgYJ2fOFJKEfInkVWY2aglmQFkimRTV7MblYyVqD7HXyhKsSuPX12MeDhRHLtGvRG+P+B/S0Vu4OswR9tmvwNPyhdCDbVayJGads/WiUWcjCvCnruTBNHS9gmX2VzVbk7ZvB1gb1hkWFGl+A/n+/FowcO34U/XvKqZ/fHY+6vgRfU92XrOBUbGeeDfQmjWjdrK+frc6FdGReQhfSF5JvR29O2QrfNw1huTwlgsyXLo0u+5So82sgv7tsFZR2nxB6lXiquHrfD8nfYZ9SeT0LiuvSoVrxGY16pCNRZKqvwWsn5OHypPBELzohMCaRaa0ceTHYqe7X/gfJEEtKFbJpWoNqO+aS1cuTykGPpK5Ga48m6L3NefTr013KqYBQu929iP1oQ/7UwSR+i3zqruUmT84qmhzLpxyj7pr9kg7LKvqaXxZmdpn+6o8sHqSqojy02gU3U8q9PnpidiaLks0mbMYz+q2uVXsoBQ8bfURULYxRgZVYCHMv9F4OA7qxT2NPPpvGQ/sTDH2yznKh7E2AcErfcNsaIoN1izzbJiaY63x4QjUFdBSvDCvugPpu5xDny0jzEeuUQbcP1aGT9V90uixngTRLYNEIIZ6yOF1H8tm7rj2JxiefsVy53zGVy3ag5uuPsdufYOzYxLRxngKe7nhx3VAq54pmz/DK9/Q3aDam2Yt3hNXB4HuU87jKNd/CKZn77Qdn5QkXPfqSkhk7hGOXXB+7v09KbBbqdvxGqa0AqfK/atIrL2WXdAgXAJ43Wtwe/aIoacXezeGPMlhDOHDbSfHna`\n+`background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAElBMVEUAAAD8/vz08vT09vT8+vzs7uxH16TeAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAuFJREFUOI0Vk+3NLiEIRG1B8ClAYAsQ2AIEt4D9ePtv5Xp/mZgYJ2fOFJKEfInkVWY2aglmQFkimRTV7MblYyVqD7HXyhKsSuPX12MeDhRHLtGvRG+P+B/S0Vu4OswR9tmvwNPyhdCDbVayJGads/WiUWcjCvCnruTBNHS9gmX2VzVbk7ZvB1gb1hkWFGl+A/n+/FowcO34U/XvKqZ/fHY+6vgRfU92XrOBUbGeeDfQmjWjdrK+frc6FdGReQhfSF5JvR29O2QrfNw1huTwlgsyXLo0u+5So82sgv7tsFZR2nxB6lXiquHrfD8nfYZ9SeT0LiuvSoVrxGY16pCNRZKqvwWsn5OHypPBELzohMCaRaa0ceTHYqe7X/gfJEEtKFbJpWoNqO+aS1cuTykGPpK5Ga48m6L3NefTr013KqYBQu929iP1oQ/7UwSR+i3zqruUmT84qmhzLpxyj7pr9kg7LKvqaXxZmdpn+6o8sHqSqojy02gU3U8q9PnpidiaLks0mbMYz+q2uVXsoBQ8bfURULYxRgZVYCHMv9F4OA7qxT2NPPpvGQ/sTDH2yznKh7E2AcErfcNsaIoN1izzbJiaY63x4QjUFdBSvDCvugPpu5xDny0jzEeuUQbcP1aGT9V90uixngTRLYNEIIZ6yOF1H8tm7rj2JxiefsVy53zGVy3ag5uuPsdufYOzYxLRxngKe7nhx3VAq54pmz/DK9/Q3aDam2Yt3hNXB4HuU87jKNd/CKZn77Qdn5QkXPfqSkhk7hGOXXB+7v09KbBbqdvxGqa0AqfK/atIrL2WXdAgXAJ43Wtwe/aIoacXezeGPMlhDOHDbSfHnaXsL2QzbT82GRwZuezdwcoWzx5pnOnGMUdHuiY7lhdyWzWiHnucLZQxYStMJbtcydHaQ6vtMbe0AcDbxG+QG14AL94xry4297xpy9Cpf1OoxZ740gHDfrK+gtsy0xabwJmfgtCeii79B6aj0SJeLbd7AAAAAElFTkSuQmCC);`\n \n ### Prisma Instantiation - src/db/index.ts\n ```",
+      "time": "2025-01-01T05:30:30",
+      "commit_message": "Typo grainy class background-image properties",
+      "branch": "main",
+      "repeat": "none"
+    },
+    {
+      "id": 4,
+      "file": "jsonauto/src/README.md",
+      "code": "diff --git a/README.md b/README.md\nindex 009c2e6..f76a1d4 100644\n--- a/README.md\n+++ b/README.md\n@@ -2,25 +2,27 @@\n \n Built with the Next.js 13.5 App Router, tRPC, TypeScript, Prisma & Tailwind\n \n+![Project Image](https://github.com/joschan21/quill/blob/master/public/thumbnail.png)\n+\n ## Features\n \n-\u00f0\u0178\u203a\u00a0\u00ef\u00b8 Complete SaaS Built From Scratch\n-\u00f0\u0178\u2019\u00bb Beautiful Landing Page & Pricing Page Included\n-\u00f0\u0178\u2019\u00b3 Free & Pro Plan Using Stripe\n-\u00f0\u0178\u201c\u201e A Beautiful And Highly Functional PDF Viewer\n-\u00f0\u0178\u201d\u201e Streaming API Responses in Real-Time\n-\u00f0\u0178\u201d\u2019 Authentication Using Kinde\n-\u00f0\u0178\u017d\u00a8 Clean, Modern UI Using 'shadcn-ui'\n-\u00f0\u0178\u0161\u20ac Optimistic UI Updates for a Great UX\n-\u00e2\u0161\u00a1 Infinite Message Loading for Performance\n-\u00f0\u0178\u201c\u00a4 Intuitive Drag n\u00e2\u20ac\u2122 Drop Uploads\n-\u00e2\u0153\u00a8 Instant Loading States\n-\u00f0\u0178\u201d\u00a7 Modern Data Fetching Using tRPC & Zod\n-\u00f0\u0178\u00a7\u00a0 LangChain for Infinite AI Memory\n-\u00f0\u0178\u0152\u00b2 Pinecone as our Vector Storage\n-\u00f0\u0178\u201c\u0160 Prisma as our ORM\n-\u00f0\u0178\u201d\u00a4 100% written in TypeScript\n-\u00f0\u0178\u017d ...much more\n+- \u00f0\u0178\u203a\u00a0\u00ef\u00b8 Complete SaaS Built From Scratch\n+- \u00f0\u0178\u2019\u00bb Beautiful Landing Page & Pricing Page Included\n+- \u00f0\u0178\u2019\u00b3 Free & Pro Plan Using Stripe\n+- \u00f0\u0178\u201c\u201e A Beautiful And Highly Functional PDF Viewer\n+- \u00f0\u0178\u201d\u201e Streaming API Responses in Real-Time\n+- \u00f0\u0178\u201d\u2019 Authentication Using Kinde\n+- \u00f0\u0178\u017d\u00a8 Clean, Modern UI Using 'shadcn-ui'\n+- \u00f0\u0178\u0161\u20ac Optimistic UI Updates for a Great UX\n+- \u00e2\u0161\u00a1 Infinite Message Loading for Performance\n+- \u00f0\u0178\u201c\u00a4 Intuitive Drag n\u00e2\u20ac\u2122 Drop Uploads\n+- \u00e2\u0153\u00a8 Instant Loading States\n+- \u00f0\u0178\u201d\u00a7 Modern Data Fetching Using tRPC & Zod\n+- \u00f0\u0178\u00a7\u00a0 LangChain for Infinite AI Memory\n+- \u00f0\u0178\u0152\u00b2 Pinecone as our Vector Storage\n+- \u00f0\u0178\u201c\u0160 Prisma as our ORM\n+- \u00f0\u0178\u201d\u00a4 100% written in TypeScript\n+- \u00f0\u0178\u017d ...much more\n \n ## Getting started",
+      "time": "2025-01-01T05:30:30",
+      "commit_message": "Update README.md",
+      "branch": "main",
+      "repeat": "none"
+    },
+    {
+      "id": 5,
+      "file": "jsonauto/src/README.md",
+      "code": "diff --git a/README.md b/README.md\nindex c403366..009c2e6 100644\n--- a/README.md\n+++ b/README.md\n@@ -1,36 +1,42 @@\n-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).\n-\n-## Getting Started\n-\n-First, run the development server:\n+# Quill - A Modern Fullstack SaaS-Platform\n+\n+Built with the Next.js 13.5 App Router, tRPC, TypeScript, Prisma & Tailwind\n+\n+## Features\n+\n+\u00f0\u0178\u203a\u00a0\u00ef\u00b8 Complete SaaS Built From Scratch\n+\u00f0\u0178\u2019\u00bb Beautiful Landing Page & Pricing Page Included\n+\u00f0\u0178\u2019\u00b3 Free & Pro Plan Using Stripe\n+\u00f0\u0178\u201c\u201e A Beautiful And Highly Functional PDF Viewer\n+\u00f0\u0178\u201d\u201e Streaming API Responses in Real-Time\n+\u00f0\u0178\u201d\u2019 Authentication Using Kinde\n+\u00f0\u0178\u017d\u00a8 Clean, Modern UI Using 'shadcn-ui'\n+\u00f0\u0178\u0161\u20ac Optimistic UI Updates for a Great UX\n+\u00e2\u0161\u00a1 Infinite Message Loading for Performance\n+\u00f0\u0178\u201c\u00a4 Intuitive Drag n\u00e2\u20ac\u2122 Drop Uploads\n+\u00e2\u0153\u00a8 Instant Loading States\n+\u00f0\u0178\u201d\u00a7 Modern Data Fetching Using tRPC & Zod\n+\u00f0\u0178\u00a7\u00a0 LangChain for Infinite AI Memory\n+\u00f0\u0178\u0152\u00b2 Pinecone as our Vector Storage\n+\u00f0\u0178\u201c\u0160 Prisma as our ORM\n+\u00f0\u0178\u201d\u00a4 100% written in TypeScript\n+\u00f0\u0178\u017d ...much more\n+\n+## Getting started\n+\n+To get started with this project, run\n \n ```bash\n-npm run dev\n-# or\n-yarn dev\n-# or\n-pnpm dev\n-# or\n-bun dev\n+  git clone https://github.com/joschan21/quill.git\n ```\n \n-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.\n-\n-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.\n-\n-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.\n-\n-## Learn More\n-\n-To learn more about Next.js, take a look at the following resources:\n+and copy the .env.example variables into a separate .env file, fill them out & and that's all you need to get started!\n \n-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.\n-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.\n \n-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!\n+## Acknowledgements\n \n-## Deploy on Vercel\n+- [Kinde Auth](https://link.joshtriedcoding.com/kinde) for making this project possible\n \n-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.\n+## License\n \n-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.\n+[MIT](https://choosealicense.com/licenses/mit/)",
+      "time": "2025-01-01T05:30:30",
+      "commit_message": "Update README.md",
+      "branch": "main",
+      "repeat": "none"
+    }
+]
